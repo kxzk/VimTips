@@ -1,9 +1,9 @@
 ![VimrcTipsTricks](https://cdn-images-1.medium.com/max/2000/1*n4hLwVDtv4ywXxGuTaipbw.png)
 
-### A Collection Of Useful Mappings + Hacks
+# A Collection Of Useful Mappings + Hacks
 
-> *Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this can become a tool for others. Ideally, come here -> search for what you're trying to do -> add relevant line to Vimrc.*
----
+Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this can become a tool for others. Ideally, come here -> search for what you're trying to do -> add relevant line to Vimrc.   
+
 
 
 * Neovim specific: live search substitution
