@@ -36,7 +36,7 @@ nnoremap <Leader>T :%s/\s\+$//<CR>:let @/=''<CR>:nohlsearch<CR>
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'gk'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
 ```
-&nsbp;
+&nbsp;
 * Execute shell commands in buffer
 ```vimL
 nnoremap Q !!$SHELL <CR>
