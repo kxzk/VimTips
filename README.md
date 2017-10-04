@@ -3,13 +3,13 @@
 # A Collection Of Useful Mappings + Hacks
 
 Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this can become a tool for others. Ideally, come here -> search for what you're trying to do -> add relevant line to Vimrc.
-
+&nbsp;
+The mappings you see within these examples are optional. A mapping using <leader>X can easily be <leader>Y, so long as it doesn't conflict with any existing mapping.
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
-
 * (neovim): live search substitution
 ```vimL
 set inccomand=nosplit
@@ -42,8 +42,9 @@ nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
 nnoremap Q !!$SHELL <CR>
 ```
 
-* Reload .vimrc
+* Edit & Reload .vimrc
 ```vimL
+map <leader>ev :e $HOME/.vimrc
 map <leader>rv :source ~/.vimrc<CR>
 ```
 
