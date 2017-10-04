@@ -14,40 +14,40 @@ The mappings you see within these examples are optional. A mapping using <leader
 ```vimL
 set inccomand=nosplit
 ```
-
+&nbsp;
 * Remove search highlighting with delete/backspace key
 ```vimL
 nnoremap <silent> <BS> :nohlsearch<CR>
 ```
-
+&nbsp;
 * Quote words under cursor
 ```vimL
 nnoremap <leader>" viW<esc>a"<esc>gvo<esc>i"<esc>gvo<esc>3l
 nnoremap <leader>' viW<esc>a'<esc>gvo<esc>i'<esc>gvo<esc>3l
 ```
-
+&nbsp;
 * Delete all Trailing space in file
 ```vimL
 nnoremap <Leader>T :%s/\s\+$//<CR>:let @/=''<CR>:nohlsearch<CR>
 ```
-
+&nbsp;
 * Count j & k as jumps
 ```vimL
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'gk'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
 ```
-
+&nsbp;
 * Execute shell commands in buffer
 ```vimL
 nnoremap Q !!$SHELL <CR>
 ```
-
+&nbsp;
 * Edit & Reload .vimrc
 ```vimL
 map <leader>ev :e $HOME/.vimrc
 map <leader>rv :source ~/.vimrc<CR>
 ```
-
+&nbsp;
 * Grep word under cursor
 ```vimL
 nnoremap K :execute 'grep!"\b"'.expand('<cword>').'"\b"'<CR>:cw<CR>
