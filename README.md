@@ -10,7 +10,7 @@ Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this 
 &nbsp;
 &nbsp;
 
-* Neovim specific: live search substitution
+* (neovim): live search substitution
 ```vimL
 set inccomand=nosplit
 ```
@@ -40,4 +40,14 @@ nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
 * Execute shell commands in buffer
 ```vimL
 nnoremap Q !!$SHELL <CR>
+```
+
+* Reload .vimrc
+```vimL
+map <leader>rv :source ~/.vimrc<CR>
+```
+
+* Grep word under cursor
+```vimL
+nnoremap K :execute 'grep!"\b"'.expand('<cword>').'"\b"'<CR>:cw<CR>
 ```
