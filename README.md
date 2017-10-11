@@ -50,3 +50,17 @@ map <leader>rv :source ~/.vimrc<CR>
 ```vimL
 nnoremap K :execute 'grep!"\b"'.expand('<cword>').'"\b"'<CR>:cw<CR>
 ```
+&nbsp;
+* Cursor only active in current window
+```vimL
+augroup Cursoractive
+    au!
+    autocmd VimEnter, WinEnter, BufWinEnter * set local cursorline
+    autocmd WinLeave * setlocal nocursorline
+augroup END
+```
+&nbsp;
+* Window splits automatically equalized
+```vimL
+set equalalways
+```
