@@ -6,8 +6,7 @@ Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this 
 &nbsp;
 &nbsp;
 &nbsp;
-* Statusline Tips
-[Click Here](https://github.com/beigebrucewayne/VimTips/blob/master/statusline.md)
+#### Statusline Tips -> [Click Here](https://github.com/beigebrucewayne/VimTips/blob/master/statusline.md)
 &nbsp;
 &nbsp;
 &nbsp;
