@@ -1,4 +1,4 @@
-# Statusline Functions
+# Statusline Tips
 &nbsp;
 &nbsp;
 * Get Current Mode
