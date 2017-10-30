@@ -66,3 +66,25 @@ augroup END
 ```vimL
 set equalalways
 ```
+&nbsp;
+* Open plugin Github page in browser
+```vimL
+" Keybinding for visiting the GitHub page of the plugin defined on the current line
+autocmd FileType vim nmap <silent> gp :call OpenPluginHomepage()<CR>
+
+function! OpenPluginHomepage()
+  " Get line under cursor
+  let l:line = getline('.')
+
+  " Matches for instance Plug 'tpope/surround' -> tpope/surround
+  " Greedy match in order to not capture trailing comments
+  let l:plugin_name = '\w\+ \([''"]\)\(.\{-}\)\1'
+  let l:repository = matchlist(l:line, l:plugin_name)[2]
+
+  " Open the corresponding GitHub homepage with $BROWSER
+  " You need to set the BROWSER environment variable in order for this to work
+  " For MacOS, you can set the following for opening it in your default
+  " browser: 'export BROWSER=open'
+  exec '!$BROWSER https://github.com/'.l:repository
+endfunction
+```
