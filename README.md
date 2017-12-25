@@ -15,6 +15,11 @@ Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this 
 set inccomand=nosplit
 ```
 &nbsp;
+* Change in visual selected region
+```vim
+:'<,'>s/\%Vs/k/g
+```
+&nbsp;
 * Remove search highlighting with delete/backspace key
 ```vimL
 nnoremap <silent> <BS> :nohlsearch<CR>
