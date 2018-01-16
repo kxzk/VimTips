@@ -10,6 +10,15 @@ Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this 
 &nbsp;
 &nbsp;
 &nbsp;
+* Efficient workflow
+```bash
+# return to terminal, vim -> background
+<Ctrl-z>
+
+# return to vim from terminal
+fg
+```
+&nbsp;
 * (neovim): live search substitution
 ```vimL
 set inccomand=nosplit
