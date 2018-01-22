@@ -19,6 +19,11 @@ Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this 
 fg
 ```
 &nbsp;
+* Quick substitution
+```vimL
+nnoremap <leader>s :%s/
+```
+&nbsp;
 * (neovim): live search substitution
 ```vimL
 set inccomand=nosplit
