@@ -10,6 +10,11 @@ Feel free to submit a PR with an interesting line in your Vimrc. Hopefully this 
 &nbsp;
 &nbsp;
 &nbsp;
+* Editing files via SSH
+```bash
+vim scp://user@myserver[:port]//path/to/file.txt
+```
+&nbsp;
 * Efficient workflow
 ```bash
 # return to terminal, vim -> background
